@@ -1,0 +1,1 @@
+allow hal_camera_default sys_thermal_flash_state:file { read open write getattr };
