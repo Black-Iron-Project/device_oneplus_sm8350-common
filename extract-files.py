@@ -50,7 +50,7 @@ blob_fixups: blob_fixups_user_type = {
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
-        .apktool_patch('blob-patches/PowerOffAlarm.patch', '-s'),
+        .apktool_patch('blob-patches/PowerOffAlarm.patch'),
     ('odm/etc/libdlbdsservice_v3_6_etc.so', 'odm/etc/libstagefright_soft_ddpdec_etc.so', 'odm/etc/libstagefrightdolby_etc.so', 'odm/lib64/libdlbdsservice_v3_6.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'system_ext/bin/wfdservice': blob_fixup()
